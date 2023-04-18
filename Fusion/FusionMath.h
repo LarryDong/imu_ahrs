@@ -453,8 +453,8 @@ static inline FusionMatrix FusionQuaternionToMatrix(const FusionQuaternion quate
  * @param quaternion Quaternion.
  * @return Euler angles in degrees.
  */
-static inline FusionEuler FusionQuaternionToEuler(const FusionQuaternion quaternion) {
 #define Q quaternion.element
+static inline FusionEuler FusionQuaternionToEuler(const FusionQuaternion quaternion) {
     const float halfMinusQySquared = 0.5f - Q.y * Q.y; // calculate common terms to avoid repeated operations
     const FusionEuler euler = {.angle = {
             .roll = FusionRadiansToDegrees(atan2f(Q.w * Q.x + Q.y * Q.z, halfMinusQySquared - Q.x * Q.x)),

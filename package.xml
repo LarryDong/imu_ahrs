@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>imu_pose_estimator</name>
+  <name>imu_ahrs</name>
   <version>1.0.0</version>
   <description>IMU ARHS from https://github.com/xioTechnologies/Fusion.git </description>
 
