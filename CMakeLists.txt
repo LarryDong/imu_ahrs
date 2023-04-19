@@ -26,3 +26,9 @@ add_executable(estimate_orientation
 )
 target_link_libraries(estimate_orientation ${catkin_LIBRARIES})
 
+add_executable(xio 
+    src/xio_test.cpp
+    ${FusionFiles}
+)
+target_link_libraries(xio ${catkin_LIBRARIES})
+
